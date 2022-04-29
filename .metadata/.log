@@ -5447,3 +5447,258 @@ java.lang.StringIndexOutOfBoundsException: begin 0, end 9, length 8
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:22:58.812
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-04-29 17:22:58.925
+!MESSAGE org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$13(LanguageServerWrapper.java:425)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$4(LanguageServerWrapper.java:260)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy11/jdk.proxy11.$Proxy34.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$13(LanguageServerWrapper.java:423)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-04-29 17:22:58.926
+!MESSAGE org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$13(LanguageServerWrapper.java:425)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: The pipe is being closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$4(LanguageServerWrapper.java:260)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.request(RemoteEndpoint.java:161)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:91)
+	at jdk.proxy11/jdk.proxy11.$Proxy34.shutdown(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$13(LanguageServerWrapper.java:423)
+	... 7 more
+Caused by: java.io.IOException: The pipe is being closed
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:349)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:22:59.015
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@23211b1f[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:22:59.016
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:06.777
+!MESSAGE Boot LS startup time from start to initialized: 7617ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.132
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ccNAbzLVisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.134
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.146
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.146
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.147
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.147
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ccNAbzLV => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.148
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.149
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment 10 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.151
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.152
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.153
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment 14 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.154
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.155
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.155
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment12 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.156
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.157
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.158
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment15 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.159
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.160
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.161
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment16 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.162
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.163
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.164
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment17 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.164
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.165
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.166
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment18 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.166
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.168
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.168
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assessment11 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.169
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.170
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.171
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assessment13 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.171
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.173
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.173
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment4 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.174
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.178
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.183
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment5 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.184
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.186
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.187
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment6 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.187
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.191
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.192
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment7 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.192
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.194
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.195
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment8 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.196
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.197
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.198
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assesment9 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.199
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.201
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.202
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assessment2 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.202
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.203
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.204
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assessment3 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.204
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.205
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.205
+!MESSAGE buffering callback sts4.classpath.ccNAbzLV Assignment1 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.206
+!MESSAGE executing callback sts4.classpath.ccNAbzLV 18 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-29 17:23:07.939
+!MESSAGE executing callback sts4.classpath.ccNAbzLV SUCCESS [done]
